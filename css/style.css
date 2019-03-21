@@ -1,0 +1,14 @@
+header {
+    margin-bottom: 3rem;
+}
+
+body {
+    background: white;
+}
+
+footer 
+{
+    background: #212529;
+    margin-top: 3rem;
+    color: white;
+}
