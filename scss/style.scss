@@ -1,26 +1,3 @@
-header {
-    margin-bottom: 3rem;
-}
-
-body {
-    background: white;
-}
-
-footer {
-    background: #212529;
-    color: white;
-}
-
-.fixed-bottom {
-    position: fixed;
-    margin-top: 3rem;
-    width: 100%;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1030;
-}
-
 /* Small reset */
 *,
 ::before,
