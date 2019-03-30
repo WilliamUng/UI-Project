@@ -5,8 +5,8 @@ class Demo {
     this.element = element;
     this.shuffle = new Shuffle(element, {
       itemSelector: '.picture-item',
-      sizer: element.querySelector('.my-sizer-element') });
-
+      sizer: element.querySelector('.my-sizer-element')
+    });
 
     // Log events.
     this.addShuffleEventListeners();
@@ -102,11 +102,13 @@ class Demo {
     if (value === 'date-created') {
       options = {
         reverse: true,
-        by: sortByDate };
+        by: sortByDate
+      };
 
     } else if (value === 'title') {
       options = {
-        by: sortByTitle };
+        by: sortByTitle
+      };
 
     }
     this.shuffle.sort(options);
@@ -142,7 +144,8 @@ class Demo {
       const titleText = titleElement.textContent.toLowerCase().trim();
       return titleText.indexOf(searchText) !== -1;
     });
-  }}
+  }
+}
 
 
 document.addEventListener('DOMContentLoaded', () => {
