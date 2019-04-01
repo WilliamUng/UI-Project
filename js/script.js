@@ -1,6 +1,7 @@
 filterSelection1("all")
 
-function filterSelection1(c) {
+function filterSelection1(k) {
+    var c = k.toLowerCase();
     var x, i;
     x = document.getElementsByClassName("gamename");
     if (c == "all") c = "";
@@ -13,7 +14,7 @@ function filterSelection1(c) {
 
 function filterSelection2() {
     var c = document.getElementById("Search").value;
-    filterSelection1(c);
+    filterSelection1(c.toLowerCase());
 }
 
 function w3AddClass(element, name) {

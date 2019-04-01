@@ -2,6 +2,10 @@ header {
     margin-bottom: 3rem;
 }
 
+nav {
+  margin-bottom: 3rem;
+}
+
 body {
     background: rgb(226, 226, 226);
 }
@@ -54,11 +58,6 @@ p {
   margin: 1em 0;
   line-height: 1.4
 }
-
-
-
-
-
 
 
 /* Center website */
@@ -125,4 +124,10 @@ h1 {
 
 .searchbox {
   margin-bottom: 1rem;
+}
+
+h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
