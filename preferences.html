@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+
+<head>
+    <title>Now Games</title>
+	<link rel="shortcut icon" type="image/png" href="img/logo.png"/>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <img src="img/logo.png" height="50" width="50">
+            <a class="navbar-brand" href="index.html">Now Games</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="records.html">Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="search.html">News</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Profile
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="info.html">Information</a>
+                            <a class="dropdown-item" href="accountsettings.html">Account Settings</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="notifications.html">Notification Settings</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Register</a>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0" onsubmit="return search()">
+                    <input class="form-control mr-sm-2" type="text" id="myInput" placeholder="Search"
+                        aria-label="Search">
+
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+	<div class="container-fluid">
+	<div class="row">
+		<div style= "padding-left: 200px" class="col-md-4">
+			<img src="img/sekiro1.jpg" width="300" height="300">
+			<p> Change Avatar </p>
+		</div>
+		<div style= "padding-top: 100px" class="col-md-8">
+			<form>
+
+			Username: <input type="text" name="Username" value="Cojo21213"><br>
+			Email: <input type="text" name="Email" value="cdzen101@uottawa.ca">
+			<input type="submit" value="Verify">
+			</form>
+
+		</div>
+	</div>
+
+	<div class="row">
+		<div style= "padding-left: 600px" class="col-md-12">
+			<h1> <b> Notifications </b> </h1>
+			<form action="/action_page.php">
+			<input type="checkbox" name="newsletter" value="newsletter"> Send me a weekly newsletter<br>
+			
+			<input type="submit" value="Submit">
+</form>
+		</div>
+	</div>
+</div>
+</div>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- Footer -->
+	 <!--
+    <footer class="page-footer font-small blue">
+
+        
+        <div class="footer-copyright text-center py-3">© 2019 Copyright: SEG3125
+        </div>
+        
+
+    </footer>
+	-->
+	
+    <!-- Footer -->
+
+</body>
+
+</html>
