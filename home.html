@@ -2,7 +2,7 @@
 
 <head>
     <title>Now Games</title>
-
+    <link rel="shortcut icon" type="image/png" href="img/logo.png"/>
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
@@ -14,26 +14,55 @@
 
 <body>
     <!-- Header -->
-    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #df4c4c; font-size: 20px;">
-        <a class="navbar-brand" href="#">
-            <img src="img/logo.png" width="40" height="40">
-        </a>
-        <!-- Links -->
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="home.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="game.html">Games</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="news.html">News</a>
-            </li>
-        </ul>
-        <form class="form-inline ml-auto" action="/action_page.php">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-        </form>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #df4c4c; font-size: 20px;">
+        <img src="img/logo.png" height="50" width="50" style="margin-right: 20px;">
+        <a class="navbar-brand" href="index.html">Now Games</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="game.html">Games</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">News</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Profile
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="info.html">Information</a>
+                        <a class="dropdown-item" href="accountsettings.html">Account Settings</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="notifications.html">Notification Settings</a>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Register</a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0" onsubmit="return search()">
+                <input class="form-control mr-sm-2" type="text" id="myInput" placeholder="Search"
+                    aria-label="Search">
+
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
     </nav>
 
     <!-- Trending row -->
@@ -49,15 +78,15 @@
                 <div class="row text-center text-lg-left">
                     <div class="container">
                         <div class="content">
-                            <a href="">
+                            <a href="doom.html">
                                 <div class="content-overlay"></div>
                                 <img class="content-image" src="img/doom.jpg">
                                 <div class="content-details fadeIn-bottom">
                                     <h3 class="content-title">DOOM</h3>
                                     <p class="content-text">Doom is a first-person shooter video game developed by id
-                                            Software and published by Bethesda Softworks. A reboot of the Doom franchise, it
-                                            is the fourth title in the main series and the first major installment since
-                                            Doom 3 in 2004.
+                                        Software and published by Bethesda Softworks. A reboot of the Doom franchise, it
+                                        is the fourth title in the main series and the first major installment since
+                                        Doom 3 in 2004.
                                     </p>
                                 </div>
                             </a>
@@ -65,30 +94,31 @@
                     </div>
                     <div class="container">
                         <div class="content">
-                            <a href="">
+                            <a href="BOTW.html">
                                 <div class="content-overlay"></div>
                                 <img class="content-image" src="img/botw.jpg">
                                 <div class="content-details fadeIn-bottom">
                                     <h3 class="content-title">The Legend of Zelda: Breath of the Wild</h3>
-                                    <p class="content-text">The Legend of Zelda: Breath of the Wild[a] is an action-adventure
-                                            game developed and published by Nintendo. An entry in the longrunning The Legend of
-                                            Zelda series, it was released for the Nintendo Switch and Wii U consoles on March 3,
-                                            2017.</p>
+                                    <p class="content-text">The Legend of Zelda: Breath of the Wild[a] is an
+                                        action-adventure
+                                        game developed and published by Nintendo. An entry in the longrunning The Legend
+                                        of
+                                        Zelda series, it was released for the Nintendo Switch and Wii U consoles on
+                                        March 3,
+                                        2017.</p>
                                 </div>
                             </a>
                         </div>
                     </div>
                     <div class="container">
                         <div class="content">
-                            <a href="">
+                            <a href="Division.html">
                                 <div class="content-overlay"></div>
-                                <img class="content-image" src="img/fortnite.jpg">
+                                <img class="content-image" src="img/division2.jpg">
                                 <div class="content-details fadeIn-bottom">
-                                    <h3 class="content-title">Fortnite</h3>
-                                    <p class="content-text">Fortnite is an online video game developed by Epic Games and
-                                            released in 2017. It is available in three distinct game mode versions that otherwise
-                                            share the same general gameplay and game engine: Fortnite: Save the World, a cooperative
-                                            shooter-survival game for up to four players to fight off zombie-like creatures.
+                                    <h3 class="content-title">Tom Clancy's The Division 2</h3>
+                                    <p class="content-text">Tom Clancy's The Division 2 is an online action role-playing
+                                        video game developed by Massive Entertainment and published by Ubisoft.
                                     </p>
                                 </div>
                             </a>
@@ -160,10 +190,14 @@
                         <div class="content">
                             <a href="">
                                 <div class="content-overlay"></div>
-                                <img class="content-image" src="img/doom.jpg">
+                                <img class="content-image" src="img/pokemon.jpg">
                                 <div class="content-details fadeIn-bottom">
-                                    <h3 class="content-title">This is a title</h3>
-                                    <p class="content-text">This is a short description</p>
+                                    <h3 class="content-title">Pokémon: Let's Go, Pikachu! and Let's Go, Eevee!</h3>
+                                    <p class="content-text">Pokémon: Let's Go, Pikachu! and Pokémon: Let's Go, Eevee! are
+                                        role-playing video games developed
+                                        by Game Freak and published by The Pokémon Company and Nintendo for the Nintendo
+                                        Switch.
+                                        .</p>
                                 </div>
                             </a>
                         </div>
@@ -172,10 +206,15 @@
                         <div class="content">
                             <a href="">
                                 <div class="content-overlay"></div>
-                                <img class="content-image" src="img/doom.jpg">
+                                <img class="content-image" src="img/fifa.jpg">
                                 <div class="content-details fadeIn-bottom">
-                                    <h3 class="content-title">This is a title</h3>
-                                    <p class="content-text">This is a short description</p>
+                                    <h3 class="content-title">FIFA 19</h3>
+                                    <p class="content-text">FIFA 19 is a football simulation video game developed by EA
+                                        Vancouver as part of Electronic
+                                        Arts' FIFA series. Announced on 6 June 2018 for its E3 2018 press conference, it was
+                                        released on 28 September 2018
+                                        for PlayStation 3, PlayStation 4, Xbox 360, Xbox One, Nintendo Switch, and Microsoft
+                                        Windows.</p>
                                 </div>
                             </a>
                         </div>
@@ -184,10 +223,15 @@
                         <div class="content">
                             <a href="">
                                 <div class="content-overlay"></div>
-                                <img class="content-image" src="img/doom.jpg">
+                                <img class="content-image" src="img/mario.jpg">
                                 <div class="content-details fadeIn-bottom">
-                                    <h3 class="content-title">This is a title</h3>
-                                    <p class="content-text">This is a short description</p>
+                                    <h3 class="content-title">Super Mario Odyssey</h3>
+                                    <p class="content-text">Super Mario Odyssey[a] is a platform game published by Nintendo
+                                        for
+                                        the Nintendo Switch on
+                                        October 27, 2017. An entry in the Super Mario series, it follows Mario and Cappy, a
+                                        sentient hat that allows Mario
+                                        to control other characters and objects</p>
                                 </div>
                             </a>
                         </div>
