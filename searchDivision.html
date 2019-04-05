@@ -1,21 +1,20 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <head>
     <title>Now Games</title>
-	<link rel="shortcut icon" type="image/png" href="img/logo.png"/>
+    <link rel="shortcut icon" type="image/png" href="img/logo.png"/>
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <!-- Custom CSS -->
-    <link href="css/cody_style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link href="css/hover.css" rel="stylesheet">
 
 </head>
 
-<body style="background-color: #D3D3D3">
-
+<body>
     <!-- Header -->
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #df4c4c; font-size: 20px;">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #df4c4c; font-size: 20px;">
         <img src="img/logo.png" height="50" width="50" style="margin-right: 20px;">
         <a class="navbar-brand" href="home.html">Now Games</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -28,7 +27,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="home.html">Home</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="game.html">Games</a>
                 </li>
                 <li class="nav-item">
@@ -49,40 +48,43 @@
 
             </ul>
             <form class="form-inline my-2 my-lg-0" onsubmit="return search()">
-                <input class="form-control mr-sm-2" type="text" id="myInput" placeholder="Search" aria-label="Search">
+                <input class="form-control mr-sm-2" type="text" id="myInput" placeholder="Search"
+                    aria-label="Search">
 
                 <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
     </nav>
 
-	<br>
-	<br>
-	<br>
+    <!-- Trending row -->
+    <div class="container-fluid">
+        <div class="row px-5">
+            <div class="col-md-12">
+                <strong>
+                    <h1 class="font-weight-light text-lg-left mt-4 mb-0">Search Results</h1>
+                </strong>
 
-	<div class="container-fluid">
-	<div class="row">
-		<div style= "padding-left: 50px" class="col-md-4">
-			<img src="img/sekiro1.jpg" width="450" height="450">
-		</div>
-		<div class="col-md-8 fontSize">
-							<h1><b>Sekiro: Shadows Die Twice</b></h1>
-							<p><b>Developer(s):</b> FromSoftware</p>
-							<p><b>Publisher(s):</b> Activision, FromSoftware-Japan</p>
-							
-							<p><b>Platform(s):</b> Microsofts Windows, Playstation 4, Xbox One</p>
-							<p><b>Release Date:</b> March 22, 2019 </p>
-							
-							<p><b>Genre:</b> Action-Adventure</p>
-							<p><b>Ratings:</b> 9.5/10-IGN, 9/10-Steam</p>
-		</div>
-	</div>
-	<div class="row">
-		<div style= "padding-left: 50px" class="col-md-12 fontSize">
-			<p><b>Description:</b>Sekiro: Shadows Die Twice is an action-adventure video game developed by FromSoftware and published by Activision. The game was released worldwide for Microsoft Windows, PlayStation 4, and Xbox One on March 22, 2019. The game follows a Sengoku period shinobi known as Seju as he attempts to take revenge on a samurai who attacked him and kidnapped his lord.</p>
-		</div>
-	</div>
-	</div>
+                <hr class="mt-2 mb-5">
+
+                <div class="row text-center text-lg-left">
+                    <div class="container">
+                        <div class="content">
+                            <a href="Division.html">
+                                <div class="content-overlay"></div>
+                                <img class="content-image" src="img/division2.jpg">
+                                <div class="content-details fadeIn-bottom">
+                                    <h3 class="content-title">Tom Clancy's The Division 2</h3>
+                                    <p class="content-text">Tom Clancy's The Division 2 is an online action role-playing
+                                        video game developed by Massive Entertainment and published by Ubisoft.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Bootstrap core JavaScript -->
@@ -90,20 +92,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
-
-    <!-- Footer -->
-	 <!--
-    <footer class="page-footer font-small blue">
-
-        
-        <div class="footer-copyright text-center py-3">© 2019 Copyright: SEG3125
-        </div>
-        
-
-    </footer>
-	-->
-	
-    <!-- Footer -->
 
 </body>
 

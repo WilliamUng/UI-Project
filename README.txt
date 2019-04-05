@@ -1,0 +1,1 @@
+The following website application, Now Games, is a project completed by Liam Devenny (7884462), Cody Dzenitis (8245696), and William Ung (8136386) for the class Analysis and Design User Interfaces (SEG3125A) during the Winter term of 2019. It is recommended to explore the application by starting with the webpage “home.html”.

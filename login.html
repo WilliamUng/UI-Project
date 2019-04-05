@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Now Games</title>
+    <link rel="shortcut icon" type="image/png" href="img/logo.png" />
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet">
+    <style>
+        .jumbotron{
+            background-color: #df4c4c7a;
+            color:rgb(26, 25, 25);
+            padding: 20px
+        }
+        /* Adds borders for tabs */
+        .tab-content{
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- A grey horizontal navbar that becomes vertical on small screens -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #df4c4c; font-size: 20px;">
+        <img src="img/logo.png" height="50" width="50" style="margin-right: 20px;">
+        <a class="navbar-brand" href="home.html">Now Games</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="game.html">Games</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="preferences.html">Profile</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Register</a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0" onsubmit="return search()">
+                <input class="form-control mr-sm-2" type="text" id="myInput" placeholder="Search" aria-label="Search">
+
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="row" style="margin-top: 40px">
+            <div class="col-lg-6 col-md-6 col-sm-6" style="margin-top: 90px">
+                <img src="img/logo.png" class="image-responsive" style="margin-left: 50px">
+                <h1 style="font-size: 350%; text-align: start">Now Games</h1>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6" style="margin-top: 50px">
+                <div class="jumbotron">
+                    <h2 style="text-align: center">Welcome back!</h2>
+                    <form data-toggle="validator" role="form" action="home.html">
+                        <div class="form-group">
+                            <label>Your Email</label>
+                            <input name="" class="form-control" id="inputEmail" placeholder="Email" type="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Your Password</label>
+                            <input type="password" class="form-control" id="inputPassword" placeholder="********" required>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox"> Remember me!</label>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block" style="width: 30%; margin-left: 35%">Continue</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

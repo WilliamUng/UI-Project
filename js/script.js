@@ -38,6 +38,35 @@ function w3RemoveClass(element, name) {
     element.className = arr1.join(" ");
 }
 
+function search() {
+	var input = document.getElementById('myInput');
+	filter = input.value.toLowerCase();
+	if (filter == "breath of the wild" || filter == "zelda"){
+		window.location.href = "searchBOTW.html";
+		return false;
+	}
+	else if (filter == "doom"){
+		window.location.href = "searchDoom.html";
+		return false;
+	}
+	else if (filter == "apex" || filter == "apex legends"){
+		window.location.href = "searchApex.html";
+		return false;
+	}
+	else if (filter == "division" || filter == "tom clancey"){
+		window.location.href = "searchDivision.html";
+		return false;
+	}
+	else if (filter == "sekiro" || filter == "shadows die twice"){
+		window.location.href = "searchSekiro.html";
+		return false;
+	}
+	else {
+		window.location.href = "noResult.html"
+		return false;
+	}
+}
+
 // Add active class to the current button (highlight it)
 var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
